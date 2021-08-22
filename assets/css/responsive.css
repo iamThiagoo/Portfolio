@@ -135,15 +135,15 @@
         font-size: 1.7rem;
     }
 
-    .btn{
+    .btn-curriculo{
         width: 60%;  
     }
 
-    .btn a{
+    .btn-curriculo a{
         font-size: 1.5rem;
     }
 
-    .btn img {
+    .btn-curriculo img {
         max-width: 25%;
     }
 
