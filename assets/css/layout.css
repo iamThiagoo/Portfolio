@@ -1,0 +1,460 @@
+body{
+    padding-top: 8vh;
+}
+
+/* ===> HEADER <=== */
+header{
+    background: var(--lightBlack);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+    nav ul li a{
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-right: 2rem;
+    }
+
+header h1{
+    font-size: 2rem;
+    margin-left: 2rem;
+    transition: .2s ease all;
+}
+
+.header-hover:hover{
+    color: var(--lightgray);
+    border-bottom: 2px solid var(--lightGray);
+    padding-bottom: .3rem;
+    line-height: 1.2;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+/* ====> BANNER <==== */
+#main-wrapper{
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#main-wrapper{
+    position: relative;
+    background-color: var(--dark);
+}
+
+#main-wrapper .star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: animate 20s ease-in-out infinite;
+}
+
+#main-wrapper .star.star1{
+    animation-delay: 0s;
+    background: url(/assets/Imagens/Stars/star1.svg);
+}
+
+#main-wrapper .star.star2{
+    animation-delay: -1s;
+    background: url(/assets/Imagens/Stars/star2.svg);
+}
+
+#main-wrapper .star.star3{
+    animation-delay: -2s;
+    background: url(/assets/Imagens/Stars/star3.svg);
+}
+
+#main-wrapper .star.star4{
+    animation-delay: -3s;
+    background: url(/assets/Imagens/Stars/star4.svg);
+}
+
+#main-wrapper .star.star5{
+    animation-delay: -4s;
+    background: url(/assets/Imagens/Stars/star5.svg);
+}
+
+#main-wrapper .star.star6{
+    animation-delay: -5s;
+    background: url(/assets/Imagens/Stars/star6.svg);
+}
+
+#main-wrapper .star.star7{
+    animation-delay: -6s;
+    background: url(/assets/Imagens/Stars/star7.svg);
+}
+
+#main-wrapper .star.star8{
+    animation-delay: -7s;
+    background: url(/assets/Imagens/Stars/star8.svg);
+}
+
+@keyframes animate{
+    0%, 20%, 40%, 60%, 80%, 100%{
+        opacity: 0;
+    }
+    10%, 30%, 50%, 70%, 90%{
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundmove{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+main .saudacao{
+    flex-direction: column;
+}
+
+main .saudacao h2, main .linkH2{
+    font-size: 4.8rem;
+}
+
+main .saudacao p, main .linkP{
+    font-size: 2.4rem;
+}
+
+main .link-main{
+    cursor: pointer;
+    transition: 2s ease all;
+}
+
+main .link-main:hover{
+    color: var(--lightPurple);
+}
+
+main .imagem img{
+    max-width: 70%;
+    animation: astronauta 25s ease infinite;
+}
+
+@keyframes astronauta{
+    0%{
+        transform: translate(50px, 20px);
+    } 
+    20%{
+        transform: translateX(15px);
+    }
+    40%{
+        transform: translate(-100px, 10px) rotate(15deg);
+    }
+    60%{
+        transform: translate(-150px, -10px) scale(1.1) rotate(20deg);
+    } 
+    80%{
+        transform: translate(-200px, -30px) scale(.8) rotate(30deg);
+    } 
+    100%{
+        transform: translate(50px, 20px) scale(1) rotate(0deg);   
+    }
+}
+
+/* ===> Sobre mim <=== */
+.box-content{
+    padding: 5rem 0;
+    width: 80%;
+    flex-direction: column;
+}
+
+.box-content #astronautinha{
+    width: 15%;
+    margin-bottom: 2rem;
+    animation: mini-astronauta 20s linear infinite;
+}
+
+    @keyframes mini-astronauta{
+        0%{
+            transform: scale(1);
+        }
+        32%{
+            transform: scale(1.2);
+        }
+        68%{
+            transform: scale(.8);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+.box-content .about-text h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.box-content .about-text p{
+    font-size: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.myprofiles{
+    margin: 5rem 0 2rem 0;
+}
+
+.btn-curriculo{
+    padding: 1rem;
+    border-radius: .8rem;
+    background-color: var(--red);
+    width: 40%;
+    transition: 1s;
+}
+
+.btn-curriculo a{
+    font-size: 1.8rem;
+}
+
+.btn-curriculo:hover{
+    background-color: var(--lightRed);
+}
+
+.btn-curriculo img{
+    max-width: 15%;
+    padding-right: 1rem;
+}
+
+/* ===> SKILLS <=== */
+.skills{
+    background-color: var(--dark);
+}
+
+.skills-content{
+    width: 80%;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+.skills-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    font-size: 2rem;
+    margin: 8rem 0;
+}
+
+.about-skills{
+    margin-right: 1rem;
+}
+
+.about-skills h2{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--lightPurple);
+}
+
+.about-skills p{
+    font-size: 2rem;
+}
+
+.cards-skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.card{
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+    border-radius: .5rem;
+    border: .3rem solid #fff;
+    margin: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card .conteudo-card img{
+    max-width: 90%;
+    animation: cards 5s linear infinite;
+}
+
+@keyframes cards{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.card:hover{
+    border: .3rem solid black;
+    background-color: var(--darkPurple);
+}
+
+/* ===> PROJETOS <=== */
+.projects-content{
+    width: 95%;
+    flex-direction: column;
+    margin: 8rem 0 3rem 0;
+}
+
+.projects-content h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card-projeto{
+    border-radius: .5rem;
+    background-color: var(--superDarkPurple);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 58vh;
+    padding: 2rem;
+    margin: 1.5rem;
+    border: .3rem solid var(--superDarkPurple);
+}
+
+.card-projeto:hover{
+    border: .3rem solid var(--darkPurple);
+    transition: 1s;
+}
+
+.card-projeto h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-projeto p{
+    font-size: 1.5rem;
+}
+
+.card-projeto .gifs{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.card-projeto a{
+    background: var(--lightPurple);
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    border-radius: .5rem;
+    transition: 1s;
+    padding: 1rem;
+}
+
+.card-projeto a img{
+    max-width: 8%;
+    margin-right: 1rem;
+}
+
+.card-projeto a:hover{
+    background-color: var(--darkPurple);
+}
+
+.card-tecnologias{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-tecnologias span{
+    font-size: 1.5rem;
+    background-color: var(--purple);
+    padding: .5rem;
+    border-radius: .3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.otherProjects{
+    margin: 1rem;
+}
+
+.otherProjects a{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: rgb(9, 248, 228);
+    transition: .8s;
+}
+
+.otherProjects a:hover{
+    color: rgb(238, 11, 136);
+}
+
+/* ===> CONTATO <==== */
+.contact{
+    background-color: var(--dark);
+    padding: 8rem 0;
+}
+
+.contact-content{
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-content h2{
+    font-size: 3rem;
+    color: var(--lightPurple);
+    margin-bottom: 2rem;
+}
+
+.contact-content p{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.links-contacts{
+    flex-wrap: wrap;
+}
+
+.links-contacts a{
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    margin: 0 1rem 1rem 0;
+    border: .1rem solid #fff;
+}
+
+.links-contacts a:hover{
+    background-color: var(--darkPurple);
+    transition: .8s;
+}
+
+/* ===> FOOTER <==== */
+footer{
+    height: 14vh;
+    width: 100%;
+    background-color: var(--lightBlack);
+}
+
+footer .creditos h2{
+    font: 2.2rem 'Inconsolata', monospace;
+    font-weight: 400;
+}

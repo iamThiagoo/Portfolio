@@ -1,0 +1,176 @@
+/* Mobile */
+@media screen and (max-width: 675px){
+    *{
+        overflow-x: hidden;
+    }
+    header, .conteudo-card, #line, .links-contacts, .contact-content{
+        overflow-x: visible;
+    }
+
+    header h1{
+        font-size: 1.8rem;  
+    }
+
+    /* Menu Mobile */
+    #btn-mobile{
+        display: flex;
+        padding: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #line{
+        display: block;
+        border-top: .2rem solid;
+        width: 2.5rem;
+        margin: 1rem;
+    }
+    #line::after, #line::before{
+        content: "";
+        display: block;
+        height: .2rem;
+        width: 2.5rem;
+        background-color: currentColor;
+        margin-top: .5rem;
+        transition: 1s;
+        position: relative;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 50%;
+        top: 8vh;
+        right: 0;
+        height: 0;
+        background-color: var(--lightBlack);
+        transition: 1s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu a{
+        margin: 4rem 0 2rem 0;
+        padding: 2rem 0;
+    }
+    #nav.active #line{
+        border-top-color: transparent;
+    }
+
+    #nav.active #line::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #line::after{
+        transform: rotate(-135deg);
+        top: -.7rem;
+    }
+    #nav.active #menu{
+        height: 92vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    /* Banner */
+    #main-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .saudacao{
+        align-items: center;
+        width: 80%;
+    }
+
+    main .saudacao h2, main .linkH2{
+        font-size: 3.5rem;
+    }
+
+    main .saudacao p, main .linkP{
+        font-size: 2.2rem;
+    }
+
+    main .imagem{
+        display: none;
+    }
+
+    /* Sobre */
+    .box-content #astronautinha{
+        width: 50%;
+    }
+
+    /* Conhecimentos */
+    .skills-box{
+        margin: 5rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-skills{
+        margin-bottom: 2rem;
+    }    
+
+    .about-skills h2{
+        font-size: 3rem;
+    }
+
+    .about-skills p{
+        font-size: 1.8rem;
+    }
+
+    .cards-skills{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card .conteudo-card img{
+        max-width: 60%;
+    }
+
+    .card-projeto{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Sobre mim */
+    .box-content .about-text p{
+        font-size: 1.7rem;
+    }
+
+    .btn{
+        width: 60%;  
+    }
+
+    .btn a{
+        font-size: 1.5rem;
+    }
+
+    .btn img {
+        max-width: 25%;
+    }
+
+    /* Projetos */
+    .otherProjects a{
+        font-size: 1.7rem;
+    }
+    
+    .projects-content{
+        width: 100%;
+    }
+
+    /* Contato */
+    .contact-content{
+        width: 90%;
+    }
+
+    .contact-content p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .links-contacts a{
+        font-size: 1.7rem;
+    }
+
+    footer .creditos h2{
+        font-size: 1.8rem;
+    }
+}
