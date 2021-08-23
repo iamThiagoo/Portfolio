@@ -426,6 +426,7 @@ main .imagem img{
 }
 
 .contact-content p{
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 4rem;
 }
