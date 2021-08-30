@@ -1,0 +1,29 @@
+/* ===> DM SANS / INCONSOLATA / INTER / RALEWAY / SOURCE SANS PRO <====*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inconsolata&family=Inter&family=Raleway&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    color: white;
+}
+
+*::-webkit-scrollbar{
+    background-color: black;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--lightBlack);
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

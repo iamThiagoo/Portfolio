@@ -99,7 +99,7 @@
     }
 
     .box-content .about-text p{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .btn-curriculo{
@@ -130,7 +130,8 @@
     }
 
     .about-skills p{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        text-align: center;
     }
 
     .cards-skills{
@@ -169,7 +170,7 @@
     }
 
     .links-contacts a{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     footer .creditos h2{

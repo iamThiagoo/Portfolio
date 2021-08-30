@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="assets/Imagens/Favicon/rocket.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/variables.css">
         <link rel="stylesheet" href="assets/css/layout.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <title>Portfólio | Thiago Ferreira - Full-Stack Developer</title>
@@ -41,16 +42,16 @@
             </div>
         </main>
         <section class="container flexCenter">
-                <div class="box-content flexCenter" data-scroll="left" id="about-me">
+                <div class="box-content flexCenter maxWidth-content" data-scroll="left" id="about-me">
                     <img src="assets/imagens/astronautinha.svg" alt="Sobre mim" id="astronautinha">
                     <div class="about-text">
                         <h2>Sobre Mim</h2>
-                        <p class="space-down">Me chamo Thiago, tenho 17 anos de idade e sempre morei em Caxias do Sul, no Rio Grande do Sul.</p>
+                        <p class="space-down">Me chamo Thiago, tenho 17 anos de idade e moro em Caxias do Sul, no Rio Grande do Sul.</p>
                         <p>Sempre fui super fã de tecnologia, me lembro de ter o meu primeiro computador entre meus 6 anos de idade e de passar horas e horas jogando Click Jogos e Club Penguin com meus amigos.</p>
-                        <p class="space-down">E esse computador foi sobrevivendo, cada dia era uma luta para ele. Ele teve uma paradas cardíacas kkk mas sempre voltava. Um mês depois de fazer meus 16 anos, ele deu sua última respirada...</p>
-                        <p>Fiquei sem computador o ano inteiro, o pior foi nem isso e sim que entramos numa pandemia. TUDO aumentou de preço de uma hora para outra e o mundo INTEIRO virou tecnológico.</p>
-                        <p class="space-down">Continuei vivendo minha vida sem nenhuma preocupação e também meio sem objetivo. Até que um dia de agosto de 2020, vi um aplicativo chamado MIMO sobre programação e até hoje acredito que se não fosse por esse aplicativo eu não estaria nessa área.</p>
-                        <p>Em dezembro de 2020 ganho um notebook e começo a fazer os meus primeiros sites porém eu não focava tanto pois na época fazia um estágio em outra área nada relacionada com tecnologia.</p>
+                        <p class="space-down">Esse computador foi sobrevivendo e cada dia era uma luta para ele. Ele teve uma paradas cardíacas kkk mas sempre voltava. Um mês depois de fazer meus 16 anos, ele deu sua última respirada...</p>
+                        <p>Fiquei sem computador o ano inteiro, sem contar que entramos em uma pandemia e TUDO aumentou de preço de uma hora para outra, como também o mundo INTEIRO virou tecnológico.</p>
+                        <p class="space-down">Continuei vivendo minha vida sem nenhuma preocupação e também sem objetivo do que queria cursar quando fosse sair do Ensino Médio. Até que um dia de agosto de 2020, vi um aplicativo chamado MIMO sobre programação e até hoje acredito que se não fosse por esse aplicativo eu não estaria nessa área.</p>
+                        <p>Em dezembro de 2020 ganho um notebook e começo a fazer os meus primeiros projetos porém eu não focava tanto pois na época eu exercia um estágio em outra área nada relacionada com tecnologia.</p>
                         <p class="space-down">No final de março de 2021, eu saio desse estágio e começo a focar de verdade na área.</p>
                         <p>Atualmente, dedico a maior parte do meu dia estudando e desenvolvendo projetos. Penso em fazer ADS (Análise e Desenvolvimento de Sistemas) na faculdade quando terminar o terceiro ano do Ensino Médio.</p>
                     </div>
@@ -64,11 +65,11 @@
                 </div>
         </section>
         <section class="container skills flexCenter" id="my-skills">
-            <div class="skills-content" data-scroll="right">
+            <div class="skills-content maxWidth-content" data-scroll="right">
                 <div class="skills-box">
                     <div class="about-skills">
                         <h2 id="title-skills">Meus Conhecimentos</h2>
-                        <p id="conhecimento-text">Uma seção muito importante para mim pois aqui está o meu bem mais precioso, o meu conhecimento! E que vai crescer cada vez mais ao longo do tempo...</p>
+                        <p id="conhecimento-text">Essa seção é a mais importante para mim pois aqui está todo o meu conhecimento adquirido até agora durante toda essa jornada! <br><br>** clique sobre os cards para ler mais **</p>
                     </div>
                     <div class="cards-skills">
                         <div class="card flexCenter saiuBox" id="html-card">
@@ -101,7 +102,7 @@
             </div>
         </section>
         <section class="container projects flexCenter" id="my-projects">
-            <div class="projects-content flexCenter" data-scroll="left">
+            <div class="projects-content flexCenter maxWidth-content" data-scroll="left">
                 <h2>Projetos</h2>
                 <div class="projects-cards flexCenter">
                     <div class="card-projeto">
@@ -141,18 +142,6 @@
                         </div>
                     </div>
                     <div class="card-projeto">
-                        <h2>Verificador de Idade</h2>
-                        <p>O Verificador de Idade pergunta ao usuário o sexo e o ano de nascimento do indivíduo. E com essas informações ele retorna ao nosso cliente quantos anos essa pessoa tem ou irá fazer no ano atual, seguido de uma foto na qual aparece uma pessoa com uma faixa etária semelhante.</p>
-                        <a href="https://iamthiagoo.github.io/Verificador-De-Idade/" class="flexCenter" target="_blank">
-                            <img src="assets/Imagens/Icones/link.png" alt="Site do projeto">Website
-                        </a>
-                        <div class="card-tecnologias">
-                            <span class="flexCenter">HTML</span>
-                            <span class="flexCenter">CSS</span>
-                            <span class="flexCenter">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="card-projeto">
                         <h2>Em Desenvolvimento...</h2>
                         <p>Projeto ainda em desenvolvimento ... Relaxe, tome um café e escute bastante música enquanto isso 🙂<p>
                         <img src="assets/imagens/cachorin.gif" class="gifs" alt="Gif">
@@ -169,7 +158,7 @@
             </div>
         </section>
         <section class="container contact flexCenter">
-            <div class="contact-content flexCenter" data-scroll="right" id="contact">
+            <div class="contact-content flexCenter maxWidth-content" data-scroll="right" id="contact">
                 <h2>Contato</h2>
                 <p>Abaixo tem algumas opções de como você pode entrar em contato comigo e o meu GitHub, caso tenha interesse em saber o que estou desenvolvendo! 😉</p>
                 <div class="links-contacts flexCenter">
