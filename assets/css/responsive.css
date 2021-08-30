@@ -155,7 +155,9 @@
     .projects-content{
         width: 100%;
     }
-
+    .projects-cards{
+        grid-template-columns: 1fr;
+    }
     .card-projeto a img{
         max-width: 6%;
     }
@@ -198,9 +200,7 @@
         max-width: 65%;
     }
     .projects-cards{
-        display: grid;
         grid-template-columns: 1fr;
-        place-items: center;
     }
     .about-skills{
         text-align: center;
@@ -234,7 +234,7 @@
     }
     .projects-cards{
         grid-template-columns: 1fr;
-        place-items: center;
+        width: 100%;
     }
     .card .conteudo-card img{
         max-width: 65%;
@@ -263,5 +263,8 @@
     }
     .card-projeto{
         height: 60vh;
+    }
+    .projects-cards{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
