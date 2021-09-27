@@ -9,11 +9,9 @@
 <h3 align="center">Link do projeto:
 https://thiagoferreira.netlify.app/</h3>
 
-<br>
-
 ## 👨‍🚀 Sobre o projeto: 
 
-Meu portfólio foi criado com o objetivo de apresentar para as pessoas o meu trabalho ao longo da minha jornada.
+Meu portfólio foi criado com o objetivo de apresentar para as pessoas o meu trabalho/projetos ao longo da minha carreira como desenvolvedor.
 
 ## 🚀 Tecnologias
 
