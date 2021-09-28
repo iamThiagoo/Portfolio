@@ -68,7 +68,7 @@ document.querySelector("#php-card").addEventListener("click", () => {
 
 document.querySelector("#mysql-card").addEventListener("click", () => {
     conhecimentoTitle.innerHTML = `MySql`;
-    conhecimentoTexto.innerHTML = `"MySql é o 0banco de dados mais utilizado do mundo, em um banco de dados inserimos os dados do usuário vindo de um formulário. <br><br> < 1 mês de experiência.`;
+    conhecimentoTexto.innerHTML = `"MySql é o banco de dados mais utilizado do mundo, em um banco de dados ocorre o agrupamento de dados que se relacionam de forma que crie um sentido. <br><br> < 1 mês de experiência.`;
 })
 
 document.querySelector("#git-card").addEventListener("click", () => {
