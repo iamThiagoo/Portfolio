@@ -40,6 +40,7 @@ header{
     background: var(--lightBlack);
     width: 100%;
     height: 8vh;
+    padding: 3.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,7 +474,7 @@ main .imagem img{
     font-size: 1.8rem;
     border-radius: .5rem;
     margin: 0 1rem 1rem 0;
-    border: .1rem solid var(--darkPurple);
+    border: .1rem solid var(--lightGreen);
 }
 
 .links-contacts a:hover{
