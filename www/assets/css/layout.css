@@ -13,7 +13,7 @@ body{
     max-width: 1300px;
 }
 
-.margin-Bottom{
+.mb-15{
     margin-bottom: 1.5rem;
 }
 
@@ -103,42 +103,42 @@ header h1{
 
 #main-wrapper .star.star1{
     animation-delay: 0s;
-    background: url(/assets/Imagens/Stars/star1.svg);
+    background: url(../images/stars/star1.svg);
 }
 
 #main-wrapper .star.star2{
     animation-delay: -1s;
-    background: url(/assets/Imagens/Stars/star2.svg);
+    background: url(../images/stars/star2.svg);
 }
 
 #main-wrapper .star.star3{
     animation-delay: -2s;
-    background: url(/assets/Imagens/Stars/star3.svg);
+    background: url(../images/stars/star3.svg);
 }
 
 #main-wrapper .star.star4{
     animation-delay: -3s;
-    background: url(/assets/Imagens/Stars/star4.svg);
+    background: url(../images/stars/star4.svg);
 }
 
 #main-wrapper .star.star5{
     animation-delay: -4s;
-    background: url(/assets/Imagens/Stars/star5.svg);
+    background: url(../images/stars/star5.svg);
 }
 
 #main-wrapper .star.star6{
     animation-delay: -5s;
-    background: url(/assets/Imagens/Stars/star6.svg);
+    background: url(../images/stars/star6.svg);
 }
 
 #main-wrapper .star.star7{
     animation-delay: -6s;
-    background: url(/assets/Imagens/Stars/star7.svg);
+    background: url(../images/stars/star7.svg);
 }
 
 #main-wrapper .star.star8{
     animation-delay: -7s;
-    background: url(/assets/Imagens/Stars/star8.svg);
+    background: url(../images/stars/star8.svg);
 }
 
 @keyframes animate{
@@ -306,6 +306,11 @@ main .imagem img{
     font-size: 1.8rem;
 }
 
+.experience{
+    color: #995df3;
+    font-size: 1.8rem;
+}
+
 .cards-skills{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -323,7 +328,7 @@ main .imagem img{
     transition: .5s;
 }
 
-.card .conteudo-card img{
+.card .content-card img{
     max-width: 90%;
     animation: cards 5s linear infinite;
 }
@@ -439,7 +444,7 @@ main .imagem img{
 }
 
 .otherProjects a:hover{
-    color: rgb(238, 11, 136);
+    color: #ee0b88;
 }
 
 /* ===> CONTATO <==== */
