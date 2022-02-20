@@ -123,6 +123,7 @@
     
     .about-skills{
         margin-bottom: 2rem;
+        text-align: center;
     }    
 
     .about-skills h2{
@@ -131,7 +132,6 @@
 
     .about-skills p{
         font-size: 1.6rem;
-        text-align: center;
     }
 
     .cards-skills{
